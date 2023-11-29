@@ -8,12 +8,12 @@ if df is not None:
     st.dataframe(df)
 
 st.subheader('Loading the CSV file')
-df = pd.read_csv('D:\Streamlit\Products.csv')
+df = pd.read_csv('Products.csv')
 if df is not None:
     st.table(df.head())
 
 st.subheader('Dealing with images directly')
-image = Image.open('D:\Streamlit\img.png')
+image = Image.open('img.png')
 st.image(image)
 
 st.subheader('Dealing with images with file uploader')
